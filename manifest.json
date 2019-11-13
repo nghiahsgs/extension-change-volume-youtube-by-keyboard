@@ -1,0 +1,21 @@
+{
+    "manifest_version":2,
+    "name":"Extension change volume youtube by keyboard",
+    "version":"1.0",
+    "description": "Extension change volume youtube by keyboard (CTRL + UP || CTRL + DOWN)",
+    "icons": {
+        "16": "video-player.png",
+        "48": "video-player.png",
+        "128": "video-player.png"
+    },
+    "author": "nghiahsgs",
+    "content_scripts":[
+        {
+            "matches":[
+                "https://www.youtube.com/watch*"
+            ],
+            "js":["content.js"]
+        }
+    ]
+
+}
